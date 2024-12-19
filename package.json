@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "main": "api/index.js",
     "scripts": {
-        "start": "node api/index.js",
+        "start": "node dist/index.js",
+        "build": "tsc",
         "format": "prettier --write .",
         "check-format": "prettier --check ."
     },
@@ -12,5 +13,8 @@
     },
     "dependencies": {
         "prettier": "^3.4.2"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.2"
     }
 }
