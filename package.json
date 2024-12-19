@@ -1,13 +1,16 @@
 {
-  "name": "nodejs-app",
-  "version": "1.0.0",
-  "main": "api/index.js",
-  "scripts": {
-    "start": "node api/index.js",
-    "format": "prettier --write .",
-    "check-format": "prettier --check ."
-  },
-  "engines": {
-    "node": "18.x"
-  }
+    "name": "nodejs-app",
+    "version": "1.0.0",
+    "main": "api/index.js",
+    "scripts": {
+        "start": "node api/index.js",
+        "format": "prettier --write .",
+        "check-format": "prettier --check ."
+    },
+    "engines": {
+        "node": "18.x"
+    },
+    "dependencies": {
+        "prettier": "^3.4.2"
+    }
 }
