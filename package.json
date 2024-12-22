@@ -9,12 +9,13 @@
         "check-format": "prettier --check ."
     },
     "engines": {
-        "node": "18.x"
+        "node": "23.x"
     },
     "dependencies": {
         "prettier": "^3.4.2"
     },
     "devDependencies": {
-        "@types/node": "^22.10.2"
+        "@types/node": "^22.10.2",
+        "typescript": "^5.7.2"
     }
 }
