@@ -1,4 +1,4 @@
-module.exports = (req: any, res: any) => {
+module.exports = (req: string, res: any) => {
     if (req.url === '/api/a' && req.method === 'GET') {
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end('welcome to A Route');
