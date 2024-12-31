@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  nodejs_service:
+    image: nodejs_app_instance_2
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "2000:2000"
+    networks:
+      - web-network
+
+networks:
+  web-network:
+    driver: overlay
